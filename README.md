@@ -82,3 +82,44 @@ PromptQL will translate these into structured queries and display results with e
 - Hasura DDN
 - WHO TB Data
 - GitHub SSH Docs
+
+## 📁 Project Structure
+
+```
+TB-Findings/
+├── README.md
+├── compose.yaml
+├── connector.yaml
+├── hasura.yaml
+├── otel-collector-config.yaml
+├── supergraph.yaml
+├── app/
+│   └── connector/
+│       └── csv/
+│           └── csv_files/
+│               ├── TB_Burden_Country.csv
+│               ├── README.md
+│           ├── compose.yaml
+│           ├── connector.yaml
+│           ├── functions.ts
+│           ├── index.ts
+│           ├── package-lock.json
+│           ├── package.json
+│           └── tsconfig.json
+├── engine/
+│   ├── build/
+│   │   ├── auth_config.json
+│   │   ├── metadata.json
+│   │   └── open_dd.json
+│   └── Dockerfile.engine
+├── globals/
+│   ├── compose.yaml
+│   ├── hasura.yaml
+│   ├── otel-collector-config.yaml
+│   └── supergraph.yaml
+├── metadata/
+│   ├── csv-types.html
+│   ├── csv.html
+│   ├── tb_burden_country.html
+│   └── subgraph.yaml
+```
