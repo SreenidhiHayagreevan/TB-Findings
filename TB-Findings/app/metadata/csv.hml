@@ -1,0 +1,642 @@
+kind: DataConnectorLink
+version: v1
+definition:
+  name: csv
+  url:
+    readWriteUrls:
+      read:
+        valueFromEnv: APP_CSV_READ_URL
+      write:
+        valueFromEnv: APP_CSV_WRITE_URL
+  headers:
+    Authorization:
+      valueFromEnv: APP_CSV_AUTHORIZATION_HEADER
+  schema:
+    version: v0.1
+    schema:
+      collections:
+        - arguments: {}
+          description: No description available
+          foreign_keys: {}
+          name: tb_burden_country
+          type: tb_burden_country
+          uniqueness_constraints: {}
+      functions: []
+      object_types:
+        tb_burden_country:
+          description: No description available
+          fields:
+            Case detection rate (all forms), percent:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Case detection rate (all forms), percent, high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Case detection rate (all forms), percent, low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Country or territory name:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: String
+                  type: named
+            Estimated HIV in incident TB (percent):
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated HIV in incident TB (percent), high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated HIV in incident TB (percent), low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence (all forms) per 100 000 population:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence (all forms) per 100 000 population, high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence (all forms) per 100 000 population, low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence of TB cases who are HIV-positive:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence of TB cases who are HIV-positive per 100 000 population:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence of TB cases who are HIV-positive per 100 000 population, high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence of TB cases who are HIV-positive per 100 000 population, low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence of TB cases who are HIV-positive, high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated incidence of TB cases who are HIV-positive, low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated mortality of TB cases (all forms, excluding HIV) per 100 000 population:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated mortality of TB cases (all forms, excluding HIV), per 100 000 population, high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated mortality of TB cases (all forms, excluding HIV), per 100 000 population, low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated mortality of TB cases who are HIV-positive, per 100 000 population:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated mortality of TB cases who are HIV-positive, per 100 000 population, high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated mortality of TB cases who are HIV-positive, per 100 000 population, low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of deaths from TB (all forms, excluding HIV):
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of deaths from TB (all forms, excluding HIV), high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of deaths from TB (all forms, excluding HIV), low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of deaths from TB in people who are HIV-positive:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of deaths from TB in people who are HIV-positive, high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of deaths from TB in people who are HIV-positive, low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of incident cases (all forms):
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of incident cases (all forms), high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated number of incident cases (all forms), low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated prevalence of TB (all forms):
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated prevalence of TB (all forms) per 100 000 population:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated prevalence of TB (all forms) per 100 000 population, high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated prevalence of TB (all forms) per 100 000 population, low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated prevalence of TB (all forms), high bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated prevalence of TB (all forms), low bound:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: Float
+                  type: named
+            Estimated total population number:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: BigInt
+                  type: named
+            ISO 2-character country/territory code:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: String
+                  type: named
+            ISO 3-character country/territory code:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: String
+                  type: named
+            ISO numeric country/territory code:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: BigInt
+                  type: named
+            Method to derive TBHIV estimates:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: String
+                  type: named
+            Method to derive incidence estimates:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: String
+                  type: named
+            Method to derive mortality estimates:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: String
+                  type: named
+            Method to derive prevalence estimates:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: String
+                  type: named
+            Region:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: String
+                  type: named
+            Year:
+              description: No description available
+              type:
+                type: nullable
+                underlying_type:
+                  name: BigInt
+                  type: named
+      procedures: []
+      scalar_types:
+        BigInt:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              argument_type:
+                name: BigInt
+                type: named
+              type: custom
+            _gte:
+              argument_type:
+                name: BigInt
+                type: named
+              type: custom
+            _lt:
+              argument_type:
+                name: BigInt
+                type: named
+              type: custom
+            _lte:
+              argument_type:
+                name: BigInt
+                type: named
+              type: custom
+            _neq:
+              argument_type:
+                name: BigInt
+                type: named
+              type: custom
+          representation:
+            type: biginteger
+        Boolean:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+        Float:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              argument_type:
+                name: Float
+                type: named
+              type: custom
+            _gte:
+              argument_type:
+                name: Float
+                type: named
+              type: custom
+            _lt:
+              argument_type:
+                name: Float
+                type: named
+              type: custom
+            _lte:
+              argument_type:
+                name: Float
+                type: named
+              type: custom
+            _neq:
+              argument_type:
+                name: Float
+                type: named
+              type: custom
+        HugeInt:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              argument_type:
+                name: HugeInt
+                type: named
+              type: custom
+            _gte:
+              argument_type:
+                name: HugeInt
+                type: named
+              type: custom
+            _lt:
+              argument_type:
+                name: HugeInt
+                type: named
+              type: custom
+            _lte:
+              argument_type:
+                name: HugeInt
+                type: named
+              type: custom
+            _neq:
+              argument_type:
+                name: HugeInt
+                type: named
+              type: custom
+          representation:
+            type: biginteger
+        Int:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              argument_type:
+                name: Int
+                type: named
+              type: custom
+            _gte:
+              argument_type:
+                name: Int
+                type: named
+              type: custom
+            _lt:
+              argument_type:
+                name: Int
+                type: named
+              type: custom
+            _lte:
+              argument_type:
+                name: Int
+                type: named
+              type: custom
+            _neq:
+              argument_type:
+                name: Int
+                type: named
+              type: custom
+        String:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _glob:
+              argument_type:
+                name: String
+                type: named
+              type: custom
+            _gt:
+              argument_type:
+                name: String
+                type: named
+              type: custom
+            _gte:
+              argument_type:
+                name: String
+                type: named
+              type: custom
+            _like:
+              argument_type:
+                name: String
+                type: named
+              type: custom
+            _lt:
+              argument_type:
+                name: String
+                type: named
+              type: custom
+            _lte:
+              argument_type:
+                name: String
+                type: named
+              type: custom
+            _neq:
+              argument_type:
+                name: String
+                type: named
+              type: custom
+        Timestamp:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              argument_type:
+                name: Timestamp
+                type: named
+              type: custom
+            _gte:
+              argument_type:
+                name: Timestamp
+                type: named
+              type: custom
+            _lt:
+              argument_type:
+                name: Timestamp
+                type: named
+              type: custom
+            _lte:
+              argument_type:
+                name: Timestamp
+                type: named
+              type: custom
+            _neq:
+              argument_type:
+                name: Timestamp
+                type: named
+              type: custom
+        UBigInt:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              argument_type:
+                name: UBigInt
+                type: named
+              type: custom
+            _gte:
+              argument_type:
+                name: UBigInt
+                type: named
+              type: custom
+            _lt:
+              argument_type:
+                name: UBigInt
+                type: named
+              type: custom
+            _lte:
+              argument_type:
+                name: UBigInt
+                type: named
+              type: custom
+            _neq:
+              argument_type:
+                name: UBigInt
+                type: named
+              type: custom
+          representation:
+            type: biginteger
+        UHugeInt:
+          aggregate_functions: {}
+          comparison_operators:
+            _eq:
+              type: equal
+            _gt:
+              argument_type:
+                name: UHugeInt
+                type: named
+              type: custom
+            _gte:
+              argument_type:
+                name: UHugeInt
+                type: named
+              type: custom
+            _lt:
+              argument_type:
+                name: UHugeInt
+                type: named
+              type: custom
+            _lte:
+              argument_type:
+                name: UHugeInt
+                type: named
+              type: custom
+            _neq:
+              argument_type:
+                name: UHugeInt
+                type: named
+              type: custom
+          representation:
+            type: biginteger
+    capabilities:
+      capabilities:
+        mutation:
+          explain: null
+          transactional: null
+        query:
+          aggregates: {}
+          nested_fields: {}
+          variables: {}
+        relationships:
+          order_by_aggregate: {}
+          relation_comparisons: {}
+      version: 0.1.6
+  argumentPresets:
+    - argument: headers
+      value:
+        httpHeaders:
+          forward:
+            - x-hasura-oauth-services
+          additional: {}

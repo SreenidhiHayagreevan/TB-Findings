@@ -1,0 +1,727 @@
+---
+kind: ObjectType
+version: v1
+definition:
+  name: tb_burden_country
+  description: No description available
+  fields:
+    - name: Case_detection_rate__all_forms___percent
+      type: Float
+      description: No description available
+    - name: Case_detection_rate__all_forms___percent__high_bound
+      type: Float
+      description: No description available
+    - name: Case_detection_rate__all_forms___percent__low_bound
+      type: Float
+      description: No description available
+    - name: Country_or_territory_name
+      type: String
+      description: No description available
+    - name: Estimated_HIV_in_incident_TB__percent_
+      type: Float
+      description: No description available
+    - name: Estimated_HIV_in_incident_TB__percent___high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_HIV_in_incident_TB__percent___low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_incidence__all_forms__per_100_000_population
+      type: Float
+      description: No description available
+    - name: Estimated_incidence__all_forms__per_100_000_population__high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_incidence__all_forms__per_100_000_population__low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_incidence_of_TB_cases_who_are_HIV_positive
+      type: Float
+      description: No description available
+    - name: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population
+      type: Float
+      description: No description available
+    - name: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_incidence_of_TB_cases_who_are_HIV_positive__high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_incidence_of_TB_cases_who_are_HIV_positive__low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV__per_100_000_population
+      type: Float
+      description: No description available
+    - name: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population
+      type: Float
+      description: No description available
+    - name: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV_
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_incident_cases__all_forms_
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_incident_cases__all_forms___high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_number_of_incident_cases__all_forms___low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_prevalence_of_TB__all_forms_
+      type: Float
+      description: No description available
+    - name: Estimated_prevalence_of_TB__all_forms__per_100_000_population
+      type: Float
+      description: No description available
+    - name: Estimated_prevalence_of_TB__all_forms__per_100_000_population__high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_prevalence_of_TB__all_forms__per_100_000_population__low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_prevalence_of_TB__all_forms___high_bound
+      type: Float
+      description: No description available
+    - name: Estimated_prevalence_of_TB__all_forms___low_bound
+      type: Float
+      description: No description available
+    - name: Estimated_total_population_number
+      type: biginteger
+      description: No description available
+    - name: ISO_2_character_country_territory_code
+      type: String
+      description: No description available
+    - name: ISO_3_character_country_territory_code
+      type: String
+      description: No description available
+    - name: ISO_numeric_country_territory_code
+      type: biginteger
+      description: No description available
+    - name: Method_to_derive_TBHIV_estimates
+      type: String
+      description: No description available
+    - name: Method_to_derive_incidence_estimates
+      type: String
+      description: No description available
+    - name: Method_to_derive_mortality_estimates
+      type: String
+      description: No description available
+    - name: Method_to_derive_prevalence_estimates
+      type: String
+      description: No description available
+    - name: Region
+      type: String
+      description: No description available
+    - name: Year
+      type: biginteger
+      description: No description available
+  graphql:
+    typeName: tb_burden_country
+    inputTypeName: tb_burden_country_input
+  dataConnectorTypeMapping:
+    - dataConnectorName: csv
+      dataConnectorObjectType: tb_burden_country
+      fieldMapping:
+        Case_detection_rate__all_forms___percent:
+          column:
+            name: Case detection rate (all forms), percent
+        Case_detection_rate__all_forms___percent__high_bound:
+          column:
+            name: Case detection rate (all forms), percent, high bound
+        Case_detection_rate__all_forms___percent__low_bound:
+          column:
+            name: Case detection rate (all forms), percent, low bound
+        Country_or_territory_name:
+          column:
+            name: Country or territory name
+        Estimated_HIV_in_incident_TB__percent_:
+          column:
+            name: Estimated HIV in incident TB (percent)
+        Estimated_HIV_in_incident_TB__percent___high_bound:
+          column:
+            name: Estimated HIV in incident TB (percent), high bound
+        Estimated_HIV_in_incident_TB__percent___low_bound:
+          column:
+            name: Estimated HIV in incident TB (percent), low bound
+        Estimated_incidence__all_forms__per_100_000_population:
+          column:
+            name: Estimated incidence (all forms) per 100 000 population
+        Estimated_incidence__all_forms__per_100_000_population__high_bound:
+          column:
+            name: Estimated incidence (all forms) per 100 000 population, high bound
+        Estimated_incidence__all_forms__per_100_000_population__low_bound:
+          column:
+            name: Estimated incidence (all forms) per 100 000 population, low bound
+        Estimated_incidence_of_TB_cases_who_are_HIV_positive:
+          column:
+            name: Estimated incidence of TB cases who are HIV-positive
+        Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population:
+          column:
+            name: Estimated incidence of TB cases who are HIV-positive per 100 000
+              population
+        Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__high_bound:
+          column:
+            name: Estimated incidence of TB cases who are HIV-positive per 100 000
+              population, high bound
+        Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__low_bound:
+          column:
+            name: Estimated incidence of TB cases who are HIV-positive per 100 000
+              population, low bound
+        Estimated_incidence_of_TB_cases_who_are_HIV_positive__high_bound:
+          column:
+            name: Estimated incidence of TB cases who are HIV-positive, high bound
+        Estimated_incidence_of_TB_cases_who_are_HIV_positive__low_bound:
+          column:
+            name: Estimated incidence of TB cases who are HIV-positive, low bound
+        Estimated_mortality_of_TB_cases__all_forms__excluding_HIV__per_100_000_population:
+          column:
+            name: Estimated mortality of TB cases (all forms, excluding HIV) per 100 000
+              population
+        Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__high_bound:
+          column:
+            name: Estimated mortality of TB cases (all forms, excluding HIV), per 100 000
+              population, high bound
+        Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__low_bound:
+          column:
+            name: Estimated mortality of TB cases (all forms, excluding HIV), per 100 000
+              population, low bound
+        Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population:
+          column:
+            name: Estimated mortality of TB cases who are HIV-positive, per 100 000
+              population
+        Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__high_bound:
+          column:
+            name: Estimated mortality of TB cases who are HIV-positive, per 100 000
+              population, high bound
+        Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__low_bound:
+          column:
+            name: Estimated mortality of TB cases who are HIV-positive, per 100 000
+              population, low bound
+        Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV_:
+          column:
+            name: Estimated number of deaths from TB (all forms, excluding HIV)
+        Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___high_bound:
+          column:
+            name: Estimated number of deaths from TB (all forms, excluding HIV), high bound
+        Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___low_bound:
+          column:
+            name: Estimated number of deaths from TB (all forms, excluding HIV), low bound
+        Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive:
+          column:
+            name: Estimated number of deaths from TB in people who are HIV-positive
+        Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__high_bound:
+          column:
+            name: Estimated number of deaths from TB in people who are HIV-positive, high
+              bound
+        Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__low_bound:
+          column:
+            name: Estimated number of deaths from TB in people who are HIV-positive, low
+              bound
+        Estimated_number_of_incident_cases__all_forms_:
+          column:
+            name: Estimated number of incident cases (all forms)
+        Estimated_number_of_incident_cases__all_forms___high_bound:
+          column:
+            name: Estimated number of incident cases (all forms), high bound
+        Estimated_number_of_incident_cases__all_forms___low_bound:
+          column:
+            name: Estimated number of incident cases (all forms), low bound
+        Estimated_prevalence_of_TB__all_forms_:
+          column:
+            name: Estimated prevalence of TB (all forms)
+        Estimated_prevalence_of_TB__all_forms__per_100_000_population:
+          column:
+            name: Estimated prevalence of TB (all forms) per 100 000 population
+        Estimated_prevalence_of_TB__all_forms__per_100_000_population__high_bound:
+          column:
+            name: Estimated prevalence of TB (all forms) per 100 000 population, high bound
+        Estimated_prevalence_of_TB__all_forms__per_100_000_population__low_bound:
+          column:
+            name: Estimated prevalence of TB (all forms) per 100 000 population, low bound
+        Estimated_prevalence_of_TB__all_forms___high_bound:
+          column:
+            name: Estimated prevalence of TB (all forms), high bound
+        Estimated_prevalence_of_TB__all_forms___low_bound:
+          column:
+            name: Estimated prevalence of TB (all forms), low bound
+        Estimated_total_population_number:
+          column:
+            name: Estimated total population number
+        ISO_2_character_country_territory_code:
+          column:
+            name: ISO 2-character country/territory code
+        ISO_3_character_country_territory_code:
+          column:
+            name: ISO 3-character country/territory code
+        ISO_numeric_country_territory_code:
+          column:
+            name: ISO numeric country/territory code
+        Method_to_derive_TBHIV_estimates:
+          column:
+            name: Method to derive TBHIV estimates
+        Method_to_derive_incidence_estimates:
+          column:
+            name: Method to derive incidence estimates
+        Method_to_derive_mortality_estimates:
+          column:
+            name: Method to derive mortality estimates
+        Method_to_derive_prevalence_estimates:
+          column:
+            name: Method to derive prevalence estimates
+        Region:
+          column:
+            name: Region
+        Year:
+          column:
+            name: Year
+
+---
+kind: TypePermissions
+version: v1
+definition:
+  typeName: tb_burden_country
+  permissions:
+    - role: admin
+      output:
+        allowedFields:
+          - Case_detection_rate__all_forms___percent
+          - Case_detection_rate__all_forms___percent__high_bound
+          - Case_detection_rate__all_forms___percent__low_bound
+          - Country_or_territory_name
+          - Estimated_HIV_in_incident_TB__percent_
+          - Estimated_HIV_in_incident_TB__percent___high_bound
+          - Estimated_HIV_in_incident_TB__percent___low_bound
+          - Estimated_incidence__all_forms__per_100_000_population
+          - Estimated_incidence__all_forms__per_100_000_population__high_bound
+          - Estimated_incidence__all_forms__per_100_000_population__low_bound
+          - Estimated_incidence_of_TB_cases_who_are_HIV_positive
+          - Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population
+          - Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__high_bound
+          - Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__low_bound
+          - Estimated_incidence_of_TB_cases_who_are_HIV_positive__high_bound
+          - Estimated_incidence_of_TB_cases_who_are_HIV_positive__low_bound
+          - Estimated_mortality_of_TB_cases__all_forms__excluding_HIV__per_100_000_population
+          - Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__high_bound
+          - Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__low_bound
+          - Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population
+          - Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__high_bound
+          - Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__low_bound
+          - Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV_
+          - Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___high_bound
+          - Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___low_bound
+          - Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive
+          - Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__high_bound
+          - Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__low_bound
+          - Estimated_number_of_incident_cases__all_forms_
+          - Estimated_number_of_incident_cases__all_forms___high_bound
+          - Estimated_number_of_incident_cases__all_forms___low_bound
+          - Estimated_prevalence_of_TB__all_forms_
+          - Estimated_prevalence_of_TB__all_forms__per_100_000_population
+          - Estimated_prevalence_of_TB__all_forms__per_100_000_population__high_bound
+          - Estimated_prevalence_of_TB__all_forms__per_100_000_population__low_bound
+          - Estimated_prevalence_of_TB__all_forms___high_bound
+          - Estimated_prevalence_of_TB__all_forms___low_bound
+          - Estimated_total_population_number
+          - ISO_2_character_country_territory_code
+          - ISO_3_character_country_territory_code
+          - ISO_numeric_country_territory_code
+          - Method_to_derive_TBHIV_estimates
+          - Method_to_derive_incidence_estimates
+          - Method_to_derive_mortality_estimates
+          - Method_to_derive_prevalence_estimates
+          - Region
+          - Year
+
+---
+kind: BooleanExpressionType
+version: v1
+definition:
+  name: tb_burden_country_bool_exp
+  operand:
+    object:
+      type: tb_burden_country
+      comparableFields:
+        - fieldName: Case_detection_rate__all_forms___percent
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Case_detection_rate__all_forms___percent__high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Case_detection_rate__all_forms___percent__low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Country_or_territory_name
+          booleanExpressionType: String_bool_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent_
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent___high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent___low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population__high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population__low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive__high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive__low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV__per_100_000_population
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV_
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms_
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms___high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms___low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms_
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population__high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population__low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms___high_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms___low_bound
+          booleanExpressionType: Float_bool_exp
+        - fieldName: Estimated_total_population_number
+          booleanExpressionType: BigInt_bool_exp
+        - fieldName: ISO_2_character_country_territory_code
+          booleanExpressionType: String_bool_exp
+        - fieldName: ISO_3_character_country_territory_code
+          booleanExpressionType: String_bool_exp
+        - fieldName: ISO_numeric_country_territory_code
+          booleanExpressionType: BigInt_bool_exp
+        - fieldName: Method_to_derive_TBHIV_estimates
+          booleanExpressionType: String_bool_exp
+        - fieldName: Method_to_derive_incidence_estimates
+          booleanExpressionType: String_bool_exp
+        - fieldName: Method_to_derive_mortality_estimates
+          booleanExpressionType: String_bool_exp
+        - fieldName: Method_to_derive_prevalence_estimates
+          booleanExpressionType: String_bool_exp
+        - fieldName: Region
+          booleanExpressionType: String_bool_exp
+        - fieldName: Year
+          booleanExpressionType: BigInt_bool_exp
+      comparableRelationships: []
+  logicalOperators:
+    enable: true
+  isNull:
+    enable: true
+  graphql:
+    typeName: tb_burden_country_bool_exp
+
+---
+kind: AggregateExpression
+version: v1
+definition:
+  name: tb_burden_country_agg_exp
+  operand:
+    object:
+      aggregatedType: tb_burden_country
+      aggregatableFields:
+        - fieldName: Case_detection_rate__all_forms___percent
+          aggregateExpression: Float_agg_exp
+        - fieldName: Case_detection_rate__all_forms___percent__high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Case_detection_rate__all_forms___percent__low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Country_or_territory_name
+          aggregateExpression: String_agg_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent_
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent___high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent___low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population__high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population__low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive__high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive__low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV__per_100_000_population
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV_
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms_
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms___high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms___low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms_
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population__high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population__low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms___high_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms___low_bound
+          aggregateExpression: Float_agg_exp
+        - fieldName: Estimated_total_population_number
+          aggregateExpression: BigInt_agg_exp
+        - fieldName: ISO_2_character_country_territory_code
+          aggregateExpression: String_agg_exp
+        - fieldName: ISO_3_character_country_territory_code
+          aggregateExpression: String_agg_exp
+        - fieldName: ISO_numeric_country_territory_code
+          aggregateExpression: BigInt_agg_exp
+        - fieldName: Method_to_derive_TBHIV_estimates
+          aggregateExpression: String_agg_exp
+        - fieldName: Method_to_derive_incidence_estimates
+          aggregateExpression: String_agg_exp
+        - fieldName: Method_to_derive_mortality_estimates
+          aggregateExpression: String_agg_exp
+        - fieldName: Method_to_derive_prevalence_estimates
+          aggregateExpression: String_agg_exp
+        - fieldName: Region
+          aggregateExpression: String_agg_exp
+        - fieldName: Year
+          aggregateExpression: BigInt_agg_exp
+  count:
+    enable: true
+  graphql:
+    selectTypeName: tb_burden_country_agg_exp
+
+---
+kind: OrderByExpression
+version: v1
+definition:
+  name: tb_burden_country_order_by_exp
+  operand:
+    object:
+      orderedType: tb_burden_country
+      orderableFields:
+        - fieldName: Case_detection_rate__all_forms___percent
+          orderByExpression: Float_order_by_exp
+        - fieldName: Case_detection_rate__all_forms___percent__high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Case_detection_rate__all_forms___percent__low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Country_or_territory_name
+          orderByExpression: String_order_by_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent_
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent___high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_HIV_in_incident_TB__percent___low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population__high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence__all_forms__per_100_000_population__low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive_per_100_000_population__low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive__high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_incidence_of_TB_cases_who_are_HIV_positive__low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV__per_100_000_population
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_mortality_of_TB_cases__all_forms__excluding_HIV___per_100_000_population__low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_mortality_of_TB_cases_who_are_HIV_positive__per_100_000_population__low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV_
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_deaths_from_TB__all_forms__excluding_HIV___low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_deaths_from_TB_in_people_who_are_HIV_positive__low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms_
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms___high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_number_of_incident_cases__all_forms___low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms_
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population__high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms__per_100_000_population__low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms___high_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_prevalence_of_TB__all_forms___low_bound
+          orderByExpression: Float_order_by_exp
+        - fieldName: Estimated_total_population_number
+          orderByExpression: biginteger_order_by_exp
+        - fieldName: ISO_2_character_country_territory_code
+          orderByExpression: String_order_by_exp
+        - fieldName: ISO_3_character_country_territory_code
+          orderByExpression: String_order_by_exp
+        - fieldName: ISO_numeric_country_territory_code
+          orderByExpression: biginteger_order_by_exp
+        - fieldName: Method_to_derive_TBHIV_estimates
+          orderByExpression: String_order_by_exp
+        - fieldName: Method_to_derive_incidence_estimates
+          orderByExpression: String_order_by_exp
+        - fieldName: Method_to_derive_mortality_estimates
+          orderByExpression: String_order_by_exp
+        - fieldName: Method_to_derive_prevalence_estimates
+          orderByExpression: String_order_by_exp
+        - fieldName: Region
+          orderByExpression: String_order_by_exp
+        - fieldName: Year
+          orderByExpression: biginteger_order_by_exp
+      orderableRelationships: []
+  graphql:
+    expressionTypeName: tb_burden_country_order_by_exp
+
+---
+kind: Model
+version: v2
+definition:
+  name: tb_burden_country
+  objectType: tb_burden_country
+  source:
+    dataConnectorName: csv
+    collection: tb_burden_country
+  filterExpressionType: tb_burden_country_bool_exp
+  aggregateExpression: tb_burden_country_agg_exp
+  orderByExpression: tb_burden_country_order_by_exp
+  graphql:
+    selectMany:
+      queryRootField: tb_burden_country
+      subscription:
+        rootField: tb_burden_country
+    selectUniques: []
+    filterInputTypeName: tb_burden_country_filter_input
+    aggregate:
+      queryRootField: tb_burden_country_aggregate
+      subscription:
+        rootField: tb_burden_country_aggregate
+  description: No description available
+
+---
+kind: ModelPermissions
+version: v1
+definition:
+  modelName: tb_burden_country
+  permissions:
+    - role: admin
+      select:
+        filter: null
+        allowSubscriptions: true
+
