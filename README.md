@@ -78,10 +78,10 @@ PromptQL will translate these into structured queries and display results with e
 - Lay the groundwork for future disease burden dashboards and predictive analytics.
 
 ### 🔗 Resources
-- PromptQL Docs
-- Hasura DDN
-- WHO TB Data
-- GitHub SSH Docs
+- [PromptQL Docs](https://promptql.io/docs)
+- [Hasura DDN](https://hasura.io/docs/latest/ddn/)
+- [WHO TB Data](https://www.who.int/teams/global-tuberculosis-programme/data)
+- [GitHub SSH Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 ## 📁 Project Structure
 
