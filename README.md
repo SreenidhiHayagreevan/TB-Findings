@@ -37,7 +37,7 @@ git clone git@github.com:<your-username>/TB-Findings.git
 cd TB-Findings
 ```
 
-###2. Install DDN CLI and Docker
+### 2. Install DDN CLI and Docker
 
 Install DDN CLI and Docker Compose:
 ```
@@ -45,14 +45,14 @@ curl -L https://graphql-engine-cdn.hasura.io/ddn/cli/v4/get.sh | bash
 ddn doctor 
 ```
 
-###3. Add Your CSV
+### 3. Add Your CSV
 
 Place your dataset into:
 ```
 app/connector/csv/csv_files/TB_Burden_Country.csv
 ```
 
-###4. Launch PromptQL
+### 4. Launch PromptQL
 ```
 ddn connector introspect csv
 ddn model add csv "*"
@@ -62,7 +62,7 @@ ddn run docker-start
 ddn console --local
 ```
 
-###💬 Example Questions You Can Ask
+### 💬 Example Questions You Can Ask
 ```
 “Which country had the highest TB incidence in 2022?”
 “List countries with more than 10,000 TB-related deaths.”
@@ -71,13 +71,13 @@ ddn console --local
 PromptQL will translate these into structured queries and display results with explanations.
 ```
 
-###📊 Project Goals
+### 📊 Project Goals
 
 - Democratize access to global TB data through natural language.
 - Enable public health researchers and analysts to extract insights without coding.
 - Lay the groundwork for future disease burden dashboards and predictive analytics.
 
-###🔗 Resources
+### 🔗 Resources
 - PromptQL Docs
 - Hasura DDN
 - WHO TB Data
