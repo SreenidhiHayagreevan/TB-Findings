@@ -8,7 +8,7 @@ This project uses [PromptQL](https://promptql.io) to enable natural language que
 
 - **Source:** WHO Global Tuberculosis Report
 - **File:** `TB_Burden_Country.csv`
-- **Coverage:** Country-level TB metrics from 1990 to 2022
+- **Coverage:** Country-level TB metrics from 1990 to 2013
 - **Metrics include:**
   - TB incidence and prevalence
   - Mortality (with and without HIV)
